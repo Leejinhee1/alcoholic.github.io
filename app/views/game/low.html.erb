@@ -1,0 +1,36 @@
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:10px}
+</style>
+
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <a href="/game/choice"><div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">난이도 선택</div></a>
+  </div>
+</div>
+
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-center">
+ <br><br><br><br><br>
+  <h1>난이도 하 질문</h1><br>
+  <p><%= @c3.content %></p>
+
+<br><br><br>
+<form action="/game/low" method="get">
+    <a href="/game/choice"><button type="button" class="btn btn-link">레벨 선택</button></a>
+    <button type="input" class="btn btn-link">다음 질문</button>
+</form>
+</div>
+</body>
